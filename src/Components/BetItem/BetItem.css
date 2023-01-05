@@ -1,0 +1,52 @@
+.bet-item {
+  height: 100px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.bet-item:hover {
+  background-color: #f9fae7;
+  cursor: pointer;
+}
+
+.bet-item--container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+  align-items: center;
+}
+
+.bet-item--team {
+  width: 150px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.bet-item-date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000000; 
+}
+
+.bet-item--category {
+  width: 150px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.bet-item-coefficient {
+  background-color: #000000;
+  color: #f8ff13;
+  padding: 7px;
+  font-size: 19px;
+  border-radius: 5px;
+  font-weight: 600;
+}

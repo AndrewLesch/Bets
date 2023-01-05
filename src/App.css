@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  margin: auto;
+  width: 1200px;
+  background-color: #f0f0f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
   display: flex;
-  flex-direction: column;
+  background-color: #000000;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 60px;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-logo {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-description {
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header-link {
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  background-color: #f8ff13;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.header-link:hover {
+  cursor: pointer;
+  background-color: #f7fc74;
+}
+
+.app-title {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 35px;
 }

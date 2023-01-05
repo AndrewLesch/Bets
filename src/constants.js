@@ -1,0 +1,81 @@
+export const AppData = [
+  {
+    firstTeam : 'Барселона',
+    secondTeam: 'Атлетико',
+    date: '1/14/2023, 12:00 PM',
+    category: 'футбол',
+    coefficient: 1.65,
+  },
+  {
+    firstTeam : 'Барселона',
+    secondTeam: 'Реал Мадрид',
+    date: '1/9/2023, 12:00 AM',
+    category: 'футбол',
+    coefficient: 1.3,
+  },
+  {
+    firstTeam : 'Франция',
+    secondTeam: 'Беларусь',
+    date: '1/12/2023, 8:00 AM',
+    category: 'футбол',
+    coefficient: 1.44,
+  },
+  {
+    firstTeam : 'Россия',
+    secondTeam: 'Канада',
+    date: '1/2/2023, 12:00 PM',
+    category: 'хоккей',
+    coefficient: 1.4359,
+  },
+  {
+    firstTeam : 'США',
+    secondTeam: 'Россия',
+    date: '1/30/2023, 6:00 AM',
+    category: 'хоккей',
+    coefficient: 2,
+  },
+  {
+    firstTeam : 'США',
+    secondTeam: 'Франция',
+    date: '1/8/2023, 2:00 AM',
+    category: 'баскетбол',
+    coefficient: 1.55,
+  },
+  {
+    firstTeam : 'Нидерланды',
+    secondTeam: 'США',
+    date: '1/10/2023, 3:00 PM',
+    category: 'хоккей',
+    coefficient: 1.15,
+  },
+  {
+    firstTeam : 'Аргентина',
+    secondTeam: 'Франция',
+    date: '1/15/2023, 7:30 AM',
+    category: 'футбол',
+    coefficient: 2.2,
+  },
+  {
+    firstTeam : 'Россия',
+    secondTeam: 'Беларусь',
+    date: '1/23/2023, 9:45 AM',
+    category: 'футбол',
+    coefficient: 1.2,
+  },
+  {
+    firstTeam : 'Беларусь',
+    secondTeam: 'Россия',
+    date: '1/16/2023, 2:30 AM',
+    category: 'футбол',
+    coefficient: 1.5,
+  },
+  {
+    firstTeam : 'Барселона',
+    secondTeam: 'Реал Мадрид',
+    date: '1/16/2023, 3:00 PM',
+    category: 'футбол',
+    coefficient: 1.9,
+  },
+]
+
+export const todayDate = new Date().toISOString()
