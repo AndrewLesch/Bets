@@ -1,16 +1,20 @@
+import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import BetList from './Components/BetList/BetList';
+import DetailsPage from './Pages/DetailsPage/DetailsPage';
+import HomePage from './Pages/HomePage/HomePage';
 
-const  App = () => {
+const App = () => {
   return (
     <div className="app">
       <header className="app-header">
         <h1 className='header-logo'>BeTs.by</h1>
         <h3 className='header-description'>Ставим на спорт вместе!</h3>
-        <button className='header-link'>На главную</button>
+        <Link className='header-link' to="*">На главную</Link>
       </header>
-      <h2 className='app-title'>События</h2>
-      <BetList />
+      <Routes>
+        <Route path='*' element={<HomePage/>} ></Route>
+        <Route path='items/:id' element={<DetailsPage />}></Route>
+      </Routes>
     </div>
   );
 }

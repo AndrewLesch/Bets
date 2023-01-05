@@ -41,6 +41,7 @@
   background-color: #f8ff13;
   border-radius: 5px;
   padding: 15px;
+  text-decoration: none;
 }
 
 .header-link:hover {
