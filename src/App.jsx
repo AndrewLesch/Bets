@@ -13,7 +13,7 @@ const App = () => {
       </header>
       <Routes>
         <Route path='*' element={<HomePage/>} ></Route>
-        <Route path='items/:id' element={<DetailsPage />}></Route>
+        <Route path='bets/:id' element={<DetailsPage />}></Route>
       </Routes>
     </div>
   );

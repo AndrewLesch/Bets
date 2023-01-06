@@ -3,7 +3,6 @@ import { filterAndSortItems } from '../../utils';
 import BetItem from '../BetItem/BetItem';
 import './BetList.css';
 
-
 export const sortedAndFilteredItems  = filterAndSortItems(AppData)
 
 const BetList = () => {

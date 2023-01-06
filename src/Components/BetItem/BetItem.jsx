@@ -4,7 +4,7 @@ import './BetItem.css';
 const BetItem = ({item, id}) => {
  
   return (
-    <Link to={`items/${id}`} className='link1'>
+    <Link to={`bets/${id}`} className='link1'>
       <li className='bet-item'>
         <div className='bet-item--container'>
           <span className='bet-item--team'>{item.firstTeam}</span>
