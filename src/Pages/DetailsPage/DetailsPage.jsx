@@ -5,21 +5,20 @@ import { useNavigate } from "react-router-dom";
 
 import './DetailsPage.css';
 
-const DetailsPage = ({getBet}) => {
+const DetailsPage = ({getSelectedBet}) => {
   const navigate = useNavigate()
   const betId = useParams()
   const selectedBet = sortedAndFilteredItems[betId.id]
-  const [betIsActive, setBetIsActive] = useState(false);
+  const [outcomeIsActive, setOutcomeIsActive] = useState(false);
 
-  
-  const setBet = (event) => {
-    setBetIsActive(true);
+  const onChangeOutcome = event => {
+    setOutcomeIsActive(true);
     selectedBet.outcome = event.target.value;
   }
 
-  const onSubmitForm = (event) => {
+  const onSubmitForm = event => {
     event.preventDefault();
-    getBet(selectedBet)
+    getSelectedBet(selectedBet)
     navigate('/');
   }
 
@@ -32,16 +31,16 @@ const DetailsPage = ({getBet}) => {
       </div>
       <form  onSubmit={onSubmitForm}>
         <span>Коэффициент на это событие  {selectedBet.coefficient}</span>
-        <input onChange={setBet} type={'radio'} value='На победу хозяев' id='win' name='bet'/>
+        <input onChange={onChangeOutcome} type={'radio'} value='На победу хозяев' id='win' name='outcome'/>
         <label htmlFor='win'>На победу хозяев</label>
 
-        <input onChange={setBet} type={'radio'} value='На ничью' id='draw' name='bet'/>
+        <input onChange={onChangeOutcome} type={'radio'} value='На ничью' id='draw' name='outcome'/>
         <label htmlFor='draw'>На ничью</label>
 
-        <input onChange={setBet} type={'radio'} value='На победу гостей' id='lose' name='bet'/>
+        <input onChange={onChangeOutcome} type={'radio'} value='На победу гостей' id='lose' name='outcome'/>
         <label htmlFor='lose'>На победу гостей</label>
 
-        <button disabled={!betIsActive} type='submit'>Сделать ставку!</button>
+        <button disabled={!outcomeIsActive} type='submit'>Сделать ставку!</button>
       </form>
     </div>
   );

@@ -1,5 +1,4 @@
-import BetList from "../../Components/BetList/BetList";
-
+import BetList from '../../Components/BetList/BetList';
 
 const HomePage = () => {
   return (

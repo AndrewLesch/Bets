@@ -1,10 +1,10 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import './BetItem.css';
 
 const BetItem = ({item, id}) => {
- 
   return (
-    <Link to={`bets/${id}`} className='link1'>
+    <Link to={`bets/${id}`} className='bet-link'>
       <li className='bet-item'>
         <div className='bet-item--container'>
           <span className='bet-item--team'>{item.firstTeam}</span>
