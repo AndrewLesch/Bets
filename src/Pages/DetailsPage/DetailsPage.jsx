@@ -1,34 +1,47 @@
+import { useState } from "react";
 import { useParams } from "react-router";
 import { sortedAndFilteredItems } from "../../Components/BetList/BetList";
+import { useNavigate } from "react-router-dom";
 
-const DetailsPage = () => {
+import './DetailsPage.css';
+
+const DetailsPage = ({getBet}) => {
+  const navigate = useNavigate()
   const betId = useParams()
   const selectedBet = sortedAndFilteredItems[betId.id]
+  const [betIsActive, setBetIsActive] = useState(false);
 
-  const saveBet = (event) => {
+  
+  const setBet = (event) => {
+    setBetIsActive(true);
+    selectedBet.outcome = event.target.value;
+  }
+
+  const onSubmitForm = (event) => {
     event.preventDefault();
-    window.location.href = '/'
+    getBet(selectedBet)
+    navigate('/');
   }
 
   return (
     <div>
-      <div className='bet-item--container'>
-          <span className='bet-item--team'>{selectedBet.firstTeam}</span>
-          <span className='bet-item-date'>{selectedBet.date}</span>
-          <span className='bet-item--team'>{selectedBet.secondTeam}</span>
+      <div className=''>
+          <span className=''>{selectedBet.firstTeam}</span>
+          <span className=''>{selectedBet.date}</span>
+          <span className=''>{selectedBet.secondTeam}</span>
       </div>
-      <form>
+      <form  onSubmit={onSubmitForm}>
         <span>Коэффициент на это событие  {selectedBet.coefficient}</span>
-        <input type='radio' name='bet-input'/>
-        <label for='contactChoice1'>На победу хозяев</label>
+        <input onChange={setBet} type={'radio'} value='На победу хозяев' id='win' name='bet'/>
+        <label htmlFor='win'>На победу хозяев</label>
 
-        <input type='radio' name='bet-input' />
-        <label>На ничью</label>
+        <input onChange={setBet} type={'radio'} value='На ничью' id='draw' name='bet'/>
+        <label htmlFor='draw'>На ничью</label>
 
-        <input type='radio' name='bet-input' />
-        <label>На победу гостей</label>
+        <input onChange={setBet} type={'radio'} value='На победу гостей' id='lose' name='bet'/>
+        <label htmlFor='lose'>На победу гостей</label>
 
-        <button onClick={saveBet} type='submit'>Сделать ставку!</button>
+        <button disabled={!betIsActive} type='submit'>Сделать ставку!</button>
       </form>
     </div>
   );

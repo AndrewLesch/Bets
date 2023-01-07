@@ -5,6 +5,7 @@ export const AppData = [
     date: '1/14/2023, 12:00 PM',
     category: 'футбол',
     coefficient: 1.65,
+    outcome: '',
   },
   {
     firstTeam : 'Барселона',
@@ -12,6 +13,7 @@ export const AppData = [
     date: '1/9/2023, 12:00 AM',
     category: 'футбол',
     coefficient: 1.3,
+    outcome: '',
   },
   {
     firstTeam : 'Франция',
@@ -19,6 +21,7 @@ export const AppData = [
     date: '1/12/2023, 8:00 AM',
     category: 'футбол',
     coefficient: 1.44,
+    outcome: '',
   },
   {
     firstTeam : 'Россия',
@@ -26,6 +29,7 @@ export const AppData = [
     date: '1/2/2023, 12:00 PM',
     category: 'хоккей',
     coefficient: 1.4359,
+    outcome: '',
   },
   {
     firstTeam : 'США',
@@ -33,6 +37,7 @@ export const AppData = [
     date: '1/30/2023, 6:00 AM',
     category: 'хоккей',
     coefficient: 2,
+    outcome: '',
   },
   {
     firstTeam : 'США',
@@ -40,6 +45,7 @@ export const AppData = [
     date: '1/8/2023, 2:00 AM',
     category: 'баскетбол',
     coefficient: 1.55,
+    outcome: '',
   },
   {
     firstTeam : 'Нидерланды',
@@ -47,6 +53,7 @@ export const AppData = [
     date: '1/10/2023, 3:00 PM',
     category: 'хоккей',
     coefficient: 1.15,
+    outcome: '',
   },
   {
     firstTeam : 'Аргентина',
@@ -54,6 +61,7 @@ export const AppData = [
     date: '1/15/2023, 7:30 AM',
     category: 'футбол',
     coefficient: 2.2,
+    outcome: '',
   },
   {
     firstTeam : 'Россия',
@@ -61,6 +69,7 @@ export const AppData = [
     date: '1/23/2023, 9:45 AM',
     category: 'футбол',
     coefficient: 1.2,
+    outcome: '',
   },
   {
     firstTeam : 'Беларусь',
@@ -68,6 +77,7 @@ export const AppData = [
     date: '1/16/2023, 2:30 AM',
     category: 'футбол',
     coefficient: 1.5,
+    outcome: '',
   },
   {
     firstTeam : 'Барселона',
@@ -75,6 +85,7 @@ export const AppData = [
     date: '1/16/2023, 3:00 PM',
     category: 'футбол',
     coefficient: 1.9,
+    outcome: '',
   },
 ]
 
