@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useParams } from "react-router";
-import { sortedAndFilteredItems } from "../../Components/BetList/BetList";
-import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+import { useParams } from 'react-router';
+import { sortedAndFilteredItems } from '../../Components/BetList/BetList';
+import { useNavigate } from 'react-router-dom';
 
 import './DetailsPage.css';
 
@@ -23,24 +23,27 @@ const DetailsPage = ({getSelectedBet}) => {
   }
 
   return (
-    <div>
-      <div className=''>
-          <span className=''>{selectedBet.firstTeam}</span>
-          <span className=''>{selectedBet.date}</span>
-          <span className=''>{selectedBet.secondTeam}</span>
+    <div className='container'>
+      <div className='details-container'>
+          <span className='details-container-text'>{selectedBet.firstTeam}</span>
+          <span className='details-container-text'>{selectedBet.date}</span>
+          <span className='details-container-text'>{selectedBet.secondTeam}</span>
       </div>
-      <form  onSubmit={onSubmitForm}>
-        <span>Коэффициент на это событие  {selectedBet.coefficient}</span>
-        <input onChange={onChangeOutcome} type={'radio'} value='На победу хозяев' id='win' name='outcome'/>
-        <label htmlFor='win'>На победу хозяев</label>
+      <form className='bet-form' onSubmit={onSubmitForm}>
+        <span className='bet-form-coefficient'>Коэффициент на это событие <b>{selectedBet.coefficient}</b></span>
 
-        <input onChange={onChangeOutcome} type={'radio'} value='На ничью' id='draw' name='outcome'/>
-        <label htmlFor='draw'>На ничью</label>
+        <div className='bet-inputs-container'>
+          <input className='bet-input' onChange={onChangeOutcome} type={'radio'} value='На победу хозяев' id='win' name='outcome'/>
+          <label className='input-label' htmlFor='win'>На победу хозяев</label>
 
-        <input onChange={onChangeOutcome} type={'radio'} value='На победу гостей' id='lose' name='outcome'/>
-        <label htmlFor='lose'>На победу гостей</label>
+          <input className='bet-input' onChange={onChangeOutcome} type={'radio'} value='На ничью' id='draw' name='outcome'/>
+          <label className='input-label' htmlFor='draw'>На ничью</label>
 
-        <button disabled={!outcomeIsActive} type='submit'>Сделать ставку!</button>
+          <input className='bet-input' onChange={onChangeOutcome} type={'radio'} value='На победу гостей' id='lose' name='outcome'/>
+          <label className='input-label' htmlFor='lose'>На победу гостей</label>
+        </div>
+
+        <button className='bet-form-button' disabled={!outcomeIsActive} type='submit'>Сделать ставку!</button>
       </form>
     </div>
   );

@@ -3,11 +3,9 @@ import './Toast.css'
 const Toast = ({selectedBet}) => {
   return (
     <div className='toast-container'>
-      <span>{selectedBet.firstTeam}</span>
-      <span>{selectedBet.secondTeam}</span>
-      <span>{selectedBet.outcome}</span>
-      <span>{selectedBet.coefficient}</span>
-      <span>Ваша ставка принята!</span>
+      <h3 className='toast-container-comands'>Спасибо, ваша ставка на матч {selectedBet.firstTeam} | {selectedBet.secondTeam}</h3>
+      <h4 className='toast-container-outcome'>На исход: {selectedBet.outcome}</h4>
+      <h4 className='toast-container-submit'>Принята!</h4>
     </div>
   )
 }

@@ -1,0 +1,67 @@
+.container {
+  margin: auto;
+  width: 60%;
+  height: 210px;
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.details-container {
+  text-align: center;
+  font-size: 26px;
+}
+
+.bet-form {
+  height: 130px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.details-container-text {
+  margin: 15px;
+}
+
+.bet-form-coefficient {
+  font-size: 17px;
+}
+
+.bet-inputs-container {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.bet-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.input-label {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.bet-form-button {
+  background-color: #000000;
+  color: #f8ff13;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bet-form-button:hover:enabled {
+  background-color: #383737;
+}
+
+.bet-form-button:disabled {
+  color: #d4cdcd;
+}
