@@ -1,4 +1,4 @@
-import { todayDate } from "./constants";
+import { todayDate } from './constants';
 
 export const filterAndSortItems = items => {
   items = items.filter((item) => new Date(item.date) > new Date(todayDate))

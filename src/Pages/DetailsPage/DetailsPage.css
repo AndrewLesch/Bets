@@ -65,3 +65,13 @@
 .bet-form-button:disabled {
   color: #d4cdcd;
 }
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .details-container-text {
+    font-size: 21px;
+  }
+}

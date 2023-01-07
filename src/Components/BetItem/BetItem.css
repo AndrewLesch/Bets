@@ -4,7 +4,7 @@
   background: #ffffff;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin: 15px;
+  margin-top: 20px;
 }
 
 .bet-item:hover {
@@ -54,4 +54,28 @@
 .bet-link {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 600px) {
+  .bet-item {
+    height: 90px;
+    margin-top: 10px;
+  }
+
+  .bet-item--container {
+    width: 100%;
+  }
+
+  .bet-item-date {
+    font-size: 14px;
+  }
+
+  .bet-item--team {
+    font-size: 14px;
+  }
+
+  .bet-item-coefficient {
+    font-size: 14px;
+    padding: 8px;
+  }
 }

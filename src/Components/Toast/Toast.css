@@ -1,19 +1,18 @@
 .toast-container {
-  width: 450px;
+  width: 500px;
   text-align: center;
   position: absolute;
   animation-duration: 5.5s;
-  height: 90px;
+  height: 80px;
   animation-name: animate-fade;
   background-color: #f9fae7;
   color: #000000;
   border-radius: 5px;
-  margin-left: 425px;
+  margin-left: 350px;
   margin-top: 15px;
   font-family: 'Roboto', sans-serif;
   border: 1px solid #000000;
 }
-
 
 @keyframes animate-fade {
   0% { opacity: 0; }
@@ -23,19 +22,32 @@
 }
 
 .toast-container-comands {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px;
 }
 
-.toast-container-outcome{
+.toast-container-outcome {
   font-size: 14px;
   margin-top: 5px;
   font-weight: 200;
 }
 
 .toast-container-submit {
-  font-size: 17px;
+  font-size: 15px;
   margin: 5px;
   text-decoration: underline;
   font-weight: 200;
+}
+
+@media (max-width : 600px) {
+  .toast-container {
+    width: 400px;
+    margin-left: 100px;
+    margin-top: -1px;
+    height: 70px;
+  }
+  
+  .toast-container-comands {
+    font-size: 13px;
+  }
 }
