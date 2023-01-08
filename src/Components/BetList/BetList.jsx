@@ -8,7 +8,7 @@ export const sortedAndFilteredItems  = filterAndSortItems(AppData)
 
 const BetList = () => {
   return (
-    <ul className='bet-list'>
+    <ul className='list'>
       {sortedAndFilteredItems.map(((item, id) => <BetItem key={id} id={id} item={item}/>))}
     </ul>
   );

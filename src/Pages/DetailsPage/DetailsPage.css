@@ -48,7 +48,6 @@
 .bet-form-button {
   background-color: #000000;
   color: #f8ff13;
-  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 200;
   padding: 20px;
@@ -63,6 +62,7 @@
 }
 
 .bet-form-button:disabled {
+  cursor: default;
   color: #d4cdcd;
 }
 

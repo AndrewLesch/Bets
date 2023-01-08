@@ -1,18 +1,19 @@
-.bet-item {
+.item {
   height: 100px;
   width: 100%;
   background: #ffffff;
   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.bet-item:hover {
+.item:hover {
   background-color: #f9fae7;
   cursor: pointer;
 }
 
-.bet-item--container {
+.item-container {
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -21,28 +22,25 @@
   align-items: center;
 }
 
-.bet-item--team {
+.item-team {
   width: 150px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #000000;
 }
 
-.bet-item-date {
-  font-family: 'Roboto', sans-serif;
+.item-date {
   font-size: 18px;
   color: #000000; 
 }
 
-.bet-item--category {
+.item-category {
   width: 150px;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
-.bet-item-coefficient {
+.item-coefficient {
   background-color: #000000;
   color: #f8ff13;
   padding: 7px;
@@ -51,30 +49,30 @@
   font-weight: 600;
 }
 
-.bet-link {
+.item-link {
   text-decoration: none;
   color: #000000;
 }
 
 @media (max-width: 600px) {
-  .bet-item {
+  .item {
     height: 90px;
     margin-top: 10px;
   }
 
-  .bet-item--container {
+  .item-container {
     width: 100%;
   }
 
-  .bet-item-date {
+  .item-date {
     font-size: 14px;
   }
 
-  .bet-item--team {
+  .item-team {
     font-size: 14px;
   }
 
-  .bet-item-coefficient {
+  .item-coefficient {
     font-size: 14px;
     padding: 8px;
   }
