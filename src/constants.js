@@ -1,4 +1,4 @@
-export const AppData = [
+export const mockBets = [
   {
     firstTeam : 'Барселона',
     secondTeam: 'Атлетико',
@@ -87,6 +87,36 @@ export const AppData = [
     coefficient: 1.9,
     outcome: '',
   },
+  {
+    firstTeam : 'Украина',
+    secondTeam: 'Беларусь',
+    date: '1/21/2023, 6:00 PM',
+    category: 'футбол',
+    coefficient: 2.1,
+    outcome: '',
+  },
+  {
+    firstTeam : 'Арсенал',
+    secondTeam: 'Реал Мадрид',
+    date: '1/23/2023, 4:00 PM',
+    category: 'футбол',
+    coefficient: 1.39,
+    outcome: '',
+  },
+  {
+    firstTeam : 'Арсенал',
+    secondTeam: 'Реал Мадрид',
+    date: '1/18/2023, 4:00 PM',
+    category: 'футбол',
+    coefficient: 1.49,
+    outcome: '',
+  },
+  {
+    firstTeam : 'Арсенал',
+    secondTeam: 'Реал Мадрид',
+    date: '1/27/2023, 2:00 PM',
+    category: 'футбол',
+    coefficient: 1.36,
+    outcome: '',
+  },
 ]
-
-export const todayDate = new Date().toISOString()

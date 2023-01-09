@@ -1,9 +1,11 @@
-import BetList from '../../Components/BetList/BetList';
+import BetList from '../../components/BetList/BetList';
+
+import './HomePage.css'
 
 const HomePage = () => {
   return (
     <>
-      <h2 className='app-title'>События</h2>
+      <h2 className='home-title'>События</h2>
       <BetList />
     </>
   );

@@ -1,8 +1,10 @@
-import { todayDate } from './constants';
+import { mockBets } from './constants'
 
-export const filterAndSortItems = items => {
-  items = items.filter((item) => new Date(item.date) > new Date(todayDate))
+export const getFilteredAndSortedBets = () => {
+  const todayDate = new Date().toISOString()
+
+  const filteredAndSortedBets = mockBets.filter((item) => new Date(item.date) > new Date(todayDate))
     .sort((firstItem, secondItem) => new Date(firstItem.date) - new Date(secondItem.date))
 
-  return items
+  return filteredAndSortedBets
 }

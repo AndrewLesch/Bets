@@ -1,12 +1,11 @@
-import { AppData } from '../../constants';
-import { filterAndSortItems } from '../../utils';
+import { useMemo } from 'react';
+import { getFilteredAndSortedBets } from '../../utils';
 import BetItem from '../BetItem/BetItem';
 
 import './BetList.css';
 
-export const sortedAndFilteredItems  = filterAndSortItems(AppData)
-
 const BetList = () => {
+  const sortedAndFilteredItems = useMemo(() =>  getFilteredAndSortedBets(), [])
   return (
     <ul className='list'>
       {sortedAndFilteredItems.map(((item, id) => <BetItem key={id} id={id} item={item}/>))}
